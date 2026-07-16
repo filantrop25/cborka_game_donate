@@ -58,4 +58,4 @@ async def success_payment_handler(message: types.Message):
     await message.answer(f"Спасибо! Мы успешно получили ваш донат в {stars_received} ⭐️. Проект продолжает жить благодаря вам!")
 
 if __name__ == '__main__':
-    dp.run_polling(bot)ц
+    dp.run_polling(bot)
