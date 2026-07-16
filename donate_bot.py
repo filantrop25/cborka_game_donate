@@ -7,7 +7,7 @@ import threading
 import asyncio
 from aiohttp import web
 
-API_TOKEN = '8858968393:AAHJjzfd-wcKtZllV9w-m9e7VayMTXcnwQ8
+API_TOKEN = '8858968393:AAHJjzfd-wcKtZllV9w-m9e7VayMTXcnwQ8'
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
