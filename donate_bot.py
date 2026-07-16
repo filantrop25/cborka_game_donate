@@ -7,16 +7,6 @@ import threading
 import asyncio
 from aiohttp import web
 
-async def health_check(request):
-    return web.Response(text="Bot is running")
-
-def start_web_server():
-    app = web.Application()
-    app.router.add_get('/', health_check)
-    web.run_app(app, port=10000)
-
-threading.Thread(target=start_web_server, daemon=True).start()
-
 API_TOKEN = '8858968393:AAELVifzn1lBBHN4Rw6RKAyTNyEBnkpQfBs'
 
 bot = Bot(token=API_TOKEN)
